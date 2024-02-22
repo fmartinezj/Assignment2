@@ -82,7 +82,7 @@ def main():
                 G = read_graph(file_name)
                 print("Graph has been read successfully.")
             except Exception as e:
-                print(f"Error reading graph: {e}")
+                print(f"Error reading graph: {e}") #test
 
         elif choice == '2':
             if G is None: #must create or read graph before saving or computing shortest path
