@@ -1,0 +1,1 @@
+I approached this assignment a little different than the first. I looked more at the documentation than the last time. The biggest challenge with this program was the partition portion because there was a lot of logic to play with. The quantum portion was also new to me so I had a hard time navigating that portion. No additional features implemented.

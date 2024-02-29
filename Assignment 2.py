@@ -1,6 +1,7 @@
 #Francisco Martinez 
 #CECS 427
-#2/6/2024
+#2/29/2024
+#ASSIGNMENT 2
 import networkx as nx
 import matplotlib.pyplot as plt
 import numpy as np
@@ -106,7 +107,7 @@ def partition_graph(G, num_components):
     print("Condition check (Should be True to enter loop):", nx.number_connected_components(G) > num_components)
     current_connected_comps = nx.number_connected_components(G)
 
-    while nx.number_connected_components(G) > num_components:
+    while nx.number_connected_components(G) < num_components:
         print("Inside the loop - modifying the graph.")
         betweenness = nx.edge_betweenness_centrality(G)
         if not betweenness:  # Check if betweenness dictionary is empty
@@ -172,7 +173,7 @@ def main():
         print("5. Plot Graph (G)")
         print("6. Assign and Validate Values")
         print("7. Exit Program")
-        choice = input("Enter Your Choice (1-6): ")
+        choice = input("Enter Your Choice (1-7): ")
 
         if choice == '1':
             file_name = input("Enter the filename to read from: ")
